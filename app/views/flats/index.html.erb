@@ -1,11 +1,25 @@
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Simple Airbnb</a>
-    <div class="ms-auto flex">
-      <a class="btn btn-outline-primary my-2 my-sm-0 ms-2" href="/flats/new">Add Flat</a>
+    <div class="ml-auto">
+      <div class="row">
+        <div class="col-auto">
+          <form action="/flats" method="get">
+            <div class="form-group">
+              <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search" value="<%= params[:search] %>">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-auto">
+          <a class="btn btn-outline-primary my-2 my-sm-0 ms-2" href="/flats/new">Add Flat</a>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
+
 
 
 <div class="container mt-3">

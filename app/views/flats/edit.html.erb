@@ -10,5 +10,6 @@
     <%= form.input :number_of_guests %>
 
     <%= form.button :submit, "Update Flat", class: "btn btn-primary" %>
+    <%= link_to 'Back to Flat', flat_path(@flat), class: 'btn btn-secondary' %>
   <% end %>
 </div>
