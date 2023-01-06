@@ -1,0 +1,13 @@
+
+
+<div class="container mt-5 bg-light rounded p-5">
+  <h1>New Flat</h1>
+  <%= simple_form_for @flat, html: { class: 'form-horizontal' } do |f| %>
+    <%= f.input :name, required: true, label: 'Name' %>
+    <%= f.input :address, required: true, label: 'Address' %>
+    <%= f.input :description, required: true, label: 'Description' %>
+    <%= f.input :price_per_night, required: true, label: 'Price per night' %>
+    <%= f.input :number_of_guests, required: true, label: 'Number of guests' %>
+    <%= f.button :submit, 'Create Flat', class: 'btn btn-primary' %>
+  <% end %>
+</div>

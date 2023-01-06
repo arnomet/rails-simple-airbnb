@@ -1,0 +1,14 @@
+
+<div class="container mt-5">
+  <h1>Edit flat</h1>
+
+  <%= simple_form_for @flat, method: :patch, local: true do |form| %>
+    <%= form.input :name %>
+    <%= form.input :address %>
+    <%= form.input :description %>
+    <%= form.input :price_per_night %>
+    <%= form.input :number_of_guests %>
+
+    <%= form.button :submit, "Update Flat", class: "btn btn-primary" %>
+  <% end %>
+</div>
